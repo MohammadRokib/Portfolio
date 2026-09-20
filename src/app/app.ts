@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar';
 import { Sidebar } from './components/sidebar';
@@ -9,6 +9,4 @@ import { Sidebar } from './components/sidebar';
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('angular-portfolio');
-}
+export class App {}
