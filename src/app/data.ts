@@ -1,3 +1,25 @@
+export interface Profile {
+  name: string;
+  role: string;
+  company: string;
+}
+
+export const PROFILE: Profile = {
+  name: 'Md. Rokib Khan',
+  role: 'Software Engineer',
+  company: 'LeadSoft Bangladesh Limited',
+};
+
+export interface SocialLink {
+  label: string;
+  href: string;
+}
+
+export const SOCIALS: SocialLink[] = [
+  { label: 'GitHub', href: 'https://github.com/MohammadRokib' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/m0hammadrokib/' },
+];
+
 export interface Project {
   title: string;
   tech: string[];
