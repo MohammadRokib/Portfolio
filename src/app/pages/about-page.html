@@ -1,2 +1,24 @@
-<h2>About</h2>
-<p>A short bio of my self</p>
+<h2>About me</h2>
+
+@for (paragraph of paragraphs; track $index) {
+  <p>{{ paragraph }}</p>
+}
+
+<ul>
+  @for (highlight of highlights; track highlight.label) {
+    <li>
+      <strong>{{ highlight.label }}</strong
+      >{{ highlight.detail }}
+    </li>
+  }
+</ul>
+
+<h3>What I'm doing</h3>
+<ul>
+  @for (service of services; track service.title) {
+    <li>
+      <h4>{{ service.title }}</h4>
+      <p>{{ service.text }}</p>
+    </li>
+  }
+</ul>

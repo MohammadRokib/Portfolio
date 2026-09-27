@@ -20,6 +20,63 @@ export const SOCIALS: SocialLink[] = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/m0hammadrokib/' },
 ];
 
+export interface Highlight {
+  label: string;
+  detail: string;
+}
+
+export const ABOUT_PARAGRAPHS: string[] = [
+  `I'm Md. Rokib Khan — a software engineer from Dhaka, Bangladesh. I work at LeadSoft Bangladesh Limited, building and maintaining enterprise capital-market software that brokers and merchant banks rely on every day.`,
+  `My home turf is the JVM world: Java and Spring Boot on the backend, Oracle ADF for enterprise screens, and JavaFX for desktop tooling. What I enjoy most is finding slow, manual workflows and turning them into one-click automated processes.`,
+];
+
+export const ABOUT_HIGHLIGHTS: Highlight[] = [
+  {
+    label: 'DeploySync',
+    detail:
+      " — designed and shipped a self-contained Java/Spring Boot/JavaFX desktop tool that automates patching the client's Oracle ADF .ear; adopted by the support team.",
+  },
+  {
+    label: '1000x+ speedup',
+    detail:
+      ' — replaced row-by-row Oracle ADF View Object inserts with batched JDBC prepared-statement commits for charge file uploads.',
+  },
+  {
+    label: 'Journal Voucher redesign',
+    detail:
+      ' — reworked the approval screen to allow inline editing of pending vouchers, eliminating full reject-and-repost cycles.',
+  },
+  {
+    label: 'Full client migration',
+    detail:
+      ' — led a legacy-to-new system migration, correcting inconsistencies across 1 million+ records with >95% accuracy.',
+  },
+];
+
+export interface ServiceCard {
+  title: string;
+  text: string;
+}
+
+export const SERVICES: ServiceCard[] = [
+  {
+    title: 'Backend development',
+    text: 'Spring Boot services, REST APIs and batch JDBC processing that move millions of records without breaking a sweat.',
+  },
+  {
+    title: 'Enterprise applications',
+    text: 'Oracle ADF modules, BI Publisher reports and approval workflows for capital-market software.',
+  },
+  {
+    title: 'Desktop tooling',
+    text: 'Self-contained JavaFX tools like DeploySync that automate patching and deployment of Oracle ADF apps to WebLogic.',
+  },
+  {
+    title: 'Web development',
+    text: 'Responsive frontends with React and Tailwind — and now Angular, which powers this very site.',
+  },
+];
+
 export interface Project {
   title: string;
   tech: string[];
